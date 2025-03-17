@@ -1,0 +1,320 @@
+/* You should not have a media query for this mobile view (min or max width) */
+/* Using just a 1 column Grid isn't an example of good responsive web design (RWD) */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: atkinson-hyperlegible, montserrat, nunito-sans, sans-serif;
+    background-color: #00274C;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* skip to main content */
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.skip:focus {
+    top: 10px;
+}
+
+/* header */
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 15px;
+    background-color: #00274C;
+}
+
+/* the logo */
+.logo-container {
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+/* the navigation menu */
+nav {
+    grid-area: nav;
+    background-color: #00274C;
+    border-bottom: 4px solid #FFCB05;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+nav li {
+    border-bottom: 1px solid #FFCB05;
+}
+
+nav a {
+    display: block;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #FFCB05;
+    color: #00274C;
+    outline: 2px solid white;
+}
+
+/* the main */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* the sections */
+section {
+    background: #f9f9f9;
+    color: #00274C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFCB05;
+    display: grid;
+    gap: 10px;
+}
+
+/* Typography */
+h1 {
+    font-size: 200%;
+    color: #FFCB05;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 125%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* the link (not for the nav) */
+main a {
+    color:#575294;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 3px;
+}
+
+main a:hover {
+    color: #9a3324;
+    text-decoration: none;
+    border: 2px solid #00274C;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+main ul li, main ol li {
+    margin-bottom: 10px;
+    padding: 8px 0;
+}
+
+
+/* the footer */
+footer {
+    grid-area: footer;
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #FFCB05;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #75BCFF;
+    text-decoration: underline;
+    border: 1px solid #75BCFF;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+/* images */
+img{
+    border: 4px solid #FFCB05;
+    border-radius: 10px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block;
+    margin: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+}
+
+/* 2 columns */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Left Column - Categories */
+.category {
+    font-weight: bold;
+    color: #00274C;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Right Column - Descriptions */
+.description {
+    text-align: left;
+    padding: 10px;
+    border-left: 3px solid #FFCB05;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* our resources two column grid */
+
+.resources {
+    background: #f9f9f9;
+    color: #00274C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFCB05;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resources p {
+    margin-bottom: 15px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* left column */
+.category {
+    font-weight: bold;
+    color: #00274C;
+    padding: 10px;
+    /* background-color: #FFCB05;
+    border-radius: 8px; */
+    text-align: center;
+}
+/* right column */
+.description {
+    text-align: left;
+    padding: 10px;
+    border-left: 3px solid #FFCB05;;
+}
+/* image */
+.img-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-container img {
+    border-radius: 10px;
+    border: 4px solid #FFCB05;
+}
+
+/* space between paragraphs */
+section p {
+    margin-bottom: 15px;
+}
+
+/* registration button */
+.container {
+    width: 100%; /* Full width */
+    height: 150px; /* Adjust as needed */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-center {
+    text-align: center;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #0074D9;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
