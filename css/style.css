@@ -372,7 +372,7 @@ section p {
 
 /* Clint Deliverable Desktop View */
 
-  @media all and (min-width: 700px) {
+  @media all and (min-width: 600px) {
     * {
       box-sizing: border-box;
       margin: 0;
