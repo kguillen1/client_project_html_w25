@@ -431,6 +431,17 @@ section p {
   }
   
   /* NAVIGATION */
+
+
+
+   /* Navigation Menu */
+   /* Navigation menu taken from:
+   Author: Stephanie Eckles
+   Publication Date: Unknown
+   Title: Headquarters
+   Code Version: N/A
+   Availability: https://stylestage.dev/styles/headquarters/ */
+
   
   nav {
       grid-area: nav;
