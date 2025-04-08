@@ -21,7 +21,7 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "first_gen.html">First Generation Students</a></li>
+                <li><a href = "first_gen.html" class="active">First Generation Students</a></li>
                 <li><a href = "food_pantry.html">Maize & Blue Cupboard Food Pantry</a></li>
                 <li><a href = "student_life.html">Student Life: Basic Needs</a></li>
             </ul>
@@ -62,13 +62,10 @@
 
                 <div class="category">Note:</div>
                 <div class="description">Registration after March 31 is allowed, but it does not guarentee that your name will be added to the program booklet.</div>
-
-            </div>
-
-            <div class="container">
-                <div class="vertical-center">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6guaMFUxGO4k4M0_AdghNTLvaPlPIBxcmHzZEvyogfP1VJg/viewform" class="register-btn">
-                            Register Now
+                <div class="category"></div> <!-- empty left cell -->
+                <div class="description">
+                    <a href="https://docs.google.com/forms/..." class="register-btn">
+                    Register Now
                     </a>
                 </div>
             </div>
@@ -82,24 +79,45 @@
             <p><b>Location:</b> Third floor of the Student Activities Building in the Office of Academic Multicultural Initiatives.</p>
             <p><b>Email:</b> <a href="mailto:firstgeninfo@umich.edu">firstgeninfo@umich.edu</a> </p>
             <p><b>Phone:</b> <a href="tel:+17349361055">734-936-1055</a></p>
-
+            <div class="image-card">
             <img src="images/editedstudentactivities.jpg" alt="Side view of the Student Activities Building on a sunny day." width="450" height="250">
+            <div class="image-caption">We are in central campus.</div>
             </div>
         </section>
         <section>
         <h2>DID YOU KNOW?</h2>
         <div>
             <p>There are currently more than 4,000 first-generation students at the University of Michigan. Although it may seem intimidating, know that you are not alone. There are networks and programs here at the university that are here to help you succeed. </p>
-
             <img src="images/editedcampus.jpg" alt="A large group of students pose for a picture on the sidewalk of the University of Michigan campus on a sunny day." width="400" height="250">
-            </div>
+        </div>
         </section>
 
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-    </footer>
+        <div class="footer-container">
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.si.umich.edu/student-experience/academic-success">Academic Support</a></li>
+                    <li><a href="https://caps.umich.edu/">CAPS</a></li>
+                    <li><a href="https://finaid.umich.edu/">Financial Aid</a></li>
+                    <li><a href="https://ssd.umich.edu/">Services for Students with Disabilities</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:umsi.academicsuccess@umich.edu">academicsuccess@umich.edu</a></p>
+                <p>Phone: <a href="tel:+17347632285">(734) 763-2285</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Student Success Portal | <a href="https://www.si.umich.edu/privacy-statement">Privacy Policy</a> | <a href="https://diversity.umich.edu/accessibility-statement/">Accessibility Statement</a></p>
+        </div>
+    </footer>
+    <button id="backToTop" title="Back to top" aria-label="Back to top of page">↑ Top</button>
 </body>
+<script src="js/code.js"></script>
 
 </html>

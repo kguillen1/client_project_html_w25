@@ -22,7 +22,7 @@
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "first_gen.html">First Generation Students</a></li>
-                <li><a href = "food_pantry.html">Maize & Blue Cupboard Food Pantry</a></li>
+                <li><a href = "food_pantry.html" class="active">Maize & Blue Cupboard Food Pantry</a></li>
                 <li><a href = "student_life.html">Student Life: Basic Needs</a></li>
             </ul>
         </nav>
@@ -38,7 +38,10 @@
         </section>
         <section class="resources">
             <h2>OUR RESOURCES</h2>
+            <!-- <div class="resources-wrapper">
+                <div class="resources-text"> -->
             <p>Our food pantry is constantly being stocked. We offer a variety of resources to provide individuals with basic needs.</p>
+            <div class="resources-wrapper">
             <div class="resources-grid">
                 <div class="category">Food</div>
                 <div class="description">Non-perishable items (canned vegetables, rice, tuna, and more), meat, produce, dairy, bread, and frozen food.</div>
@@ -52,34 +55,42 @@
                 <div class="category">Connection</div>
                 <div class="description">We can connect you to additional campus resources such as Financial Aid and Michigan's food program, SNAP.</div>
             </div>
-            <div class="img-container">
+            <div class="resources-image">
+            <!-- <div class="img-container"> -->
                 <img src="images/vol.jpg" alt="Two volunteers preparing food donations" width="400" height="350">
             </div>
-        </section>
-        <section>
+        </div>
+    </section>
+    <div class="two-column-section">
+        <section class="appointment">
             <h2>MAKE AN APPOINTMENT</h2>
             <p>In order to pick up goods at the Maize and Blue Cupboard, an appointment is required. Appointments can be made by going to our <a href = https://calendly.com/mbcappointments/mbc-shopping-appointments?month>sign up page.</a></p>
             <p>If an appointment is not made, it is no worries, at the door, there is a QR code that can be scanned which then allows people to make same-day appointments.</p>
         </section>
-        <section>
+        <section class="hours">
             <h2>HOURS OF OPERATION</h2>
             <p><b>Sunday:</b> 2pm-6pm</p>
             <p><b>Monday - Thursday:</b> 3pm-7pm</p>
             <p><b>Friday:</b> 12pm-7pm</p>
             <p><b>Saturday:</b> CLOSED</p>
         </section>
+    </div>
         <section>
             <h2>LOCATION</h2>
             <p><b>Building:</b> Betsy Barbour Residence Hall</p>
             <p><b>Room:</b> Basement</p>
             <p><b>Entrance:</b> Maynard entrance, in order to ensure privacy of students</p>
             <p><b>Address:</b> <a href = "https://www.google.com/maps/place/Betsy+Barbour+Residence,+420+S+State+St,+Ann+Arbor,+MI+48109/@42.2772944,-83.7437539,17z/data=!3m1!4b1!4m5!3m4!1s0x883cae38ac94a547:0xf8a4be6e818a1f4!8m2!3d42.2772944!4d-83.7415652">420 S State St Ann Arbor, MI 48109</a></p>
-
+            <div class="image-card">
             <img src = "images/betsy.jpg" alt="Betsy Barbour Residence Hall on a sunny day" width="400" height="350">
+            <div class="image-caption">Betsy Barbour Residence Hall is located on Central Campus.</div>
+        </div>
 
             <p><b>Note:</b> The Maize and Blue Cupboard is located in the basement of Betsy Barbour Residence Hall. The entrance is located on Maynard Street, which is the back of the building. There is a sign that says "Maize and Blue Cupboard" near the entrance.</p>
-
+            <div class="image-card">
             <img src = "images/esignpantry.jpg" alt="Maize and Blue Cupboard sign near entrance" width="400" height="350">
+            <div class="image-caption">A sign is located on the door of the entrance.</div>
+        </div>
 
         </section>
 
@@ -92,9 +103,32 @@
             </ol>
             <img src="images/mheart.jpg" alt="'A graphic of a heart with the UofM block letter inside">
         </section>
+
     </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <footer>
+        <div class="footer-container">
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.si.umich.edu/student-experience/academic-success">Academic Support</a></li>
+                    <li><a href="https://caps.umich.edu/">CAPS</a></li>
+                    <li><a href="https://finaid.umich.edu/">Financial Aid</a></li>
+                    <li><a href="https://ssd.umich.edu/">Services for Students with Disabilities</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:umsi.academicsuccess@umich.edu">academicsuccess@umich.edu</a></p>
+                <p>Phone: <a href="tel:+17347632285">(734) 763-2285</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Student Success Portal | <a href="https://www.si.umich.edu/privacy-statement">Privacy Policy</a> | <a href="https://diversity.umich.edu/accessibility-statement/">Accessibility Statement</a></p>
+        </div>
+    </footer>
+    <button id="backToTop" title="Back to top" aria-label="Back to top of page">↑ Top</button>
 </body>
+<script src="js/code.js"></script>
 </html>
