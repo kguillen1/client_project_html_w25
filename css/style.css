@@ -362,8 +362,8 @@ section p {
     display: inline-block;
     padding: 12px 24px;
     font-size: 18px;
-    color: white;
-    background-color: #0074D9;
+    color: #ffcb05;
+    background-color: #00274c;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -909,6 +909,39 @@ h2::after {
   color: #00274C;
   transform: scale(1.05);
   outline: 2px solid #FFCB05;
+}
+
+.register-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  /* For debug */
+  /* outline: 1px dashed red; */
+}
+
+.register-button {
+  background-color: #FFCB05;
+  color: #00274C;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  /* For debug */
+  /* outline: 1px dashed green; */
+}
+
+.register-button:hover {
+  background-color: #00274C;
+  color: #FFCB05;
 }
 
 
